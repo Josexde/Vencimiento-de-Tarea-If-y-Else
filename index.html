@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  <script>
+    window.onload = function () {
+      let nombre = prompt("¿Cuál es tu nombre?");
+      let pelicula = prompt("¿Qué película te gusta?");
+      let r = document.getElementById("resultado");
+
+      if (pelicula.toLowerCase() === "shrek") {
+        r.innerHTML = `<strong>Hola ${nombre}, ¡te gusta Shrek!</strong><br>
+        <img src="https://elcomercio.pe/resizer/v2/OVSRQ4YQ2RF3PESEOCW6NSADHU.jpg?auth=97dc77af2438d5dcb920968d1a582b003c9afcab37488fe4ff5200129585960a&width=1200&height=1200&quality=75&smart=true" width="300">`;
+      } else {
+        r.innerHTML = `<strong>Hola ${nombre},</strong> tu película favorita no es Shrek.`;
+      }
+    };
+  </script>
+</head>
+<body>
+  <div id="resultado" style="font-size: 18px; padding: 20px;"></div>
+</body>
+
+
+</head> 
+</html>
